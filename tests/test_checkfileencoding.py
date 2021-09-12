@@ -21,4 +21,4 @@ class TestCheckfileencoding(unittest.TestCase):
         """Test something."""
     
     def test_get_encoding(self):
-        assert  checkfileencoding.get_encoding('./test.csv')['encoding']== 'gb18030'
+        assert  checkfileencoding.get_encoding('/home/travis/build/qinxian1989/checkfileencoding/tests/test.csv')['encoding']== 'gb18030'
