@@ -9,7 +9,7 @@ from rich import print, print_json
 def main():
     """Console script for checkfileencoding."""
     parser = argparse.ArgumentParser()
-    parser.add_argument('file',nargs='*',required=True, help='需要检查编码的文件名')
+    parser.add_argument('file',nargs='*', help='需要检查编码的文件名')
     args = parser.parse_args()
     for f in args.file:
         if os.path.exists(f):
