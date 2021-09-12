@@ -12,7 +12,7 @@ with open('HISTORY.rst') as history_file:
 
 requirements = ['charset_normalizer','rich']
 
-test_requirements = [ ]
+test_requirements = ['charset_normalizer','rich']
 
 setup(
     author="QinXuan",
@@ -31,7 +31,7 @@ setup(
     description="check file encoding",
     entry_points={
         'console_scripts': [
-            'checkfileencoding=checkfileencoding.cli:main',
+            'cfc=checkfileencoding.cli:main',
         ],
     },
     install_requires=requirements,
