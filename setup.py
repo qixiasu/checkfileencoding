@@ -10,9 +10,9 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['charset_normalizer','rich']
+requirements = ['cchardet','rich']
 
-test_requirements = ['charset_normalizer','rich']
+test_requirements = ['cchardet','rich']
 
 setup(
     author="QinXuan",
