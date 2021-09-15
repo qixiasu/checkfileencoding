@@ -3,13 +3,15 @@ import argparse
 import sys, os, json
 from .checkfileencoding import get_encoding
 from rich import print, print_json
+from .__version__ import version
+from .function_run_time import print_run_time
 
-
-
+@print_run_time
 def main():
     """Console script for checkfileencoding."""
     parser = argparse.ArgumentParser()
     parser.add_argument('file',nargs='*', help='需要检查编码的文件名')
+    parser.add_argument('-v','--version',action="version", version=version, help="版本信息")
     args = parser.parse_args()
     for f in args.file:
         if os.path.exists(f):

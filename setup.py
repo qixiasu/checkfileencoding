@@ -3,7 +3,7 @@
 """The setup script."""
 
 from setuptools import setup, find_packages
-
+from checkfileencoding.__version__ import version
 with open('README.rst') as readme_file:
     readme = readme_file.read()
 
@@ -44,6 +44,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/qinxian1989/checkfileencoding',
-    version='0.1.0',
+    version=version,
     zip_safe=False,
 )
