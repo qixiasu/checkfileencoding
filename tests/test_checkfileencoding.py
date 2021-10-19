@@ -5,7 +5,7 @@
 
 import unittest
 
-from checkfileencoding import checkfileencoding
+from checkfileencoding.filefunc import get_encoding
 
 
 class TestCheckfileencoding(unittest.TestCase):
@@ -19,6 +19,6 @@ class TestCheckfileencoding(unittest.TestCase):
 
     def test_000_something(self):
         """Test something."""
-    
+
     def test_get_encoding(self):
-        assert  checkfileencoding.get_encoding('/home/travis/build/qinxian1989/checkfileencoding/tests/test.csv')['encoding']== 'gb18030'
+        assert get_encoding.get_encoding('/home/travis/build/qinxian1989/checkfileencoding/tests/test.csv')['encoding'] == 'gb18030'
